@@ -26,7 +26,9 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
     <ChakraProvider theme={theme}>
       <QueryClientProvider client={client}>
         <Head>
-          <title>DolphinNotBot Dashboard</title>
+          <title>
+            DolphinNotBot Dashboard
+          </title>
         </Head>
         {getLayout(<Component {...pageProps} />)}
       </QueryClientProvider>
